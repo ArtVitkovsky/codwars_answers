@@ -12,5 +12,3 @@ def century(year):
         return m.floor((year / 100) + 1)
     elif cent >= 3 and year % 100 == 0:
         return int(year / 100)
-
-print(century(1250))

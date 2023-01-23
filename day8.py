@@ -13,3 +13,20 @@ def digitize(n):
     lst = [int(i) for i in str(n)]
     return lst[::-1]
 
+#  convert strings to how they would be written by Jaden Smith. The strings are actual quotes from Jaden Smith,
+#  but they are not capitalized in the same way he originally typed them.
+
+
+def to_jaden_case(string):
+    lst_1 = string.split()
+    lst_2 = [i.capitalize() for i in lst_1]
+    return ' '.join(lst_2)
+
+# Given an array of integers, remove the smallest value. Do not mutate the original array/list. If there are multiple
+# elements with the same value, remove the one with a lower index. If you get an empty array/list, return an empty
+# array/list. Don't change the order of the elements that are left.
+
+
+def remove_smallest(numbers):
+    numbers.remove(min(numbers))
+    return numbers
