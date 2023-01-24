@@ -30,3 +30,17 @@ def to_jaden_case(string):
 def remove_smallest(numbers):
     numbers.remove(min(numbers))
     return numbers
+
+# Write a function which calculates the average of the numbers in a given list.
+# Note: Empty arrays should return 0.
+
+
+def find_average(numbers):
+    if len(numbers) >= 1:
+        return sum(numbers) / len(numbers)
+    else:
+        return 0
+
+# Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'.
+# Return the resulting string.
+# Note: input will never be an empty string
