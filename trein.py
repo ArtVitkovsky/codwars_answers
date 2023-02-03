@@ -1,8 +1,9 @@
-def remove_smallest(numbers):
-    new_tup = []
-    if numbers is list:
-        numbers.remove(min(numbers))
-        return numbers
-
-
-print(remove_smallest([2, 1, 8, 1, 9, 5]))
+a = '12345679'
+b = [i for i in a]
+c = len(b)
+for j in b:
+    if int(j) < 5:
+        b[b.index(str(j))] = str(0)
+    else:
+        b[b.index(str(j))] = str(1)
+print(''.join(b))

@@ -44,3 +44,16 @@ def find_average(numbers):
 # Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'.
 # Return the resulting string.
 # Note: input will never be an empty string
+
+
+def fake_bin(x):
+    lst = [i for i in x]
+    for j in lst:
+        if int(j) < 5:
+            lst[lst.index(str(j))] = str(0)
+        else:
+            lst[lst.index(str(j))] = str(1)
+    return ''.join(lst)
+
+
+print(fake_bin('23456789'))
