@@ -27,3 +27,21 @@ def smash(words):
 
 def count_sheeps(arrayOfSheeps):
     return arrayOfSheeps.count(True)
+
+
+# In this little assignment you are given a string of space separated numbers, and have to return the highest and
+# lowest number
+
+def high_and_low(numbers):
+    lst = numbers.split()
+    lst2 = [int(i) for i in lst]
+    return f'{max(lst2)} {min(lst2)}'
+
+def better_than_average(class_points, your_points):
+    average_point = (sum(class_points) + your_points) / (len(class_points) + 1)
+    if average_point < your_points:
+        return True
+    else:
+        return False
+
+print(better_than_average([2, 3], 4))
